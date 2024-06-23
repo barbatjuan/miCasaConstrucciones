@@ -22,6 +22,12 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./../assets/styles/styles.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("rjZs4P7i10E3hu_WV"); // Tu User ID Público
+      })();
+    </script>
   </head>
   <body>
     <header>
@@ -72,8 +78,104 @@
       </nav>
     </header>
     <main class="mainContacto">
-      <form action=""></form>
+      <form id="contact-form">
+        <div class="container">
+          <div class="row formContact">
+            <div class="col">
+              <h4 class="text-center h4Form">Presupuestos sin cargo</h4>
+              <div class="mb-3">
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-people-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"
+                      />
+                    </svg>
+                  </span>
+                  <input
+                    type="text"
+                    name="first_name"
+                    aria-label="First name"
+                    class="form-control"
+                    placeholder="Nombre"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="last_name"
+                    aria-label="Last name"
+                    class="form-control"
+                    placeholder="Apellido"
+                    required
+                  />
+                </div>
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="tucorreo@gmail.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlCel" class="form-label"
+                  >Teléfono</label
+                >
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="099 555 000"
+                  id="exampleFormControlCel"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Comentarios</label
+                >
+                <textarea
+                  class="form-control"
+                  name="comments"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+                <div class="col-12">
+                  <button class="btn btn-dark" type="submit">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
     </main>
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          emailjs.sendForm("service_62uqm7y", "template_a1wk196", this).then(
+            function () {
+              alert("Mensaje enviado correctamente!");
+            },
+            function (error) {
+              alert("Error al enviar el mensaje: " + JSON.stringify(error));
+            }
+          );
+        });
+    </script>
 
     <footer>
       <div class="footer">

@@ -122,13 +122,51 @@ body {
     align-items: center;
 }
 
+/* FORM */
+
+.formContact {
+    width: 100%;
+}
+
+.h4Form {
+    color: #db8f15;
+    font-size: 2rem;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.form-control {
+    font-size: 1rem;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+}
+
+.form-label {
+    color: antiquewhite;
+    letter-spacing: 2.5px;
+    font-size: 1.2rem;
+}
+
+.btn-dark {
+    margin-top: 3%;
+    background-color: #db8f15;
+    color: #131f28;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
 
 /* contacto */
 
 .mainContacto {
     width: 100%;
     height: 100vh;
-    background-image: url(./../images/fondocontacto.jpg);
+    background-image: url(./../images/form2.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
