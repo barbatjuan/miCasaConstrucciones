@@ -28,6 +28,16 @@
         emailjs.init("rjZs4P7i10E3hu_WV"); // Tu User ID Público
       })();
     </script>
+    <style>
+      /* Estilos CSS adicionales para ajustar el diseño en dispositivos móviles */
+      .formContact {
+        margin-top: 20px;
+      }
+
+      .form-control {
+        margin-bottom: 15px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -59,11 +69,11 @@
                 <a class="nav-link" href="./../index.html">Inicio</a>
               </li>
               <!-- <li class="nav-item">
-                <a class="nav-link" href="./pages/trabajos.html">Trabajos</a>
-              </li>
+              <a class="nav-link" href="./../pages/trabajos.html">Trabajos</a>
+            </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-              </li> -->
+                <a class="nav-link" href="./../pages/nosotros.html">Nosotros</a>
+              </li>
               <li class="nav-item">
                 <a
                   class="nav-link active"
@@ -81,7 +91,7 @@
       <form id="contact-form">
         <div class="container">
           <div class="row formContact">
-            <div class="col">
+            <div class="col-12">
               <h4 class="text-center h4Form">Presupuestos sin cargo</h4>
               <div class="mb-3">
                 <div class="input-group">
@@ -151,15 +161,53 @@
                   id="exampleFormControlTextarea1"
                   rows="3"
                 ></textarea>
-                <div class="col-12">
-                  <button class="btn btn-dark" type="submit">Enviar</button>
-                </div>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-dark" type="submit">Enviar</button>
               </div>
             </div>
           </div>
         </div>
       </form>
     </main>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center mb-3">
+              <img
+                class="iconoFooter"
+                src="./../assets/images/instagram.svg"
+                alt="Instagram"
+              />
+              <img
+                class="iconoFooter"
+                src="./../assets/images/facebook.svg"
+                alt="Facebook"
+              />
+            </div>
+            <div class="col-12 text-center">
+              <h5 class="footerH5">Mi Casa Construcciones</h5>
+              <p class="footerP">info@micasaconstrucciones.uy</p>
+              <p class="footerP">Cel. +598 93 562 014</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Botón de WhatsApp -->
+      <a
+        href="https://wa.me/+59893562014"
+        class="whatsapp-button"
+        target="_blank"
+      >
+        <img src="./../assets/images/whatsapp.svg" alt="WhatsApp" />
+      </a>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script>
       document
         .getElementById("contact-form")
@@ -176,46 +224,5 @@
           );
         });
     </script>
-
-    <footer>
-      <div class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col footerSection"></div>
-            <div class="col footerSection"></div>
-            <div class="col footerSection text-end">
-              <img
-                class="iconoFooter"
-                src="./../assets/images/instagram.svg"
-                alt="Instagram"
-              />
-              <img
-                class="iconoFooter"
-                src="./../assets/images/facebook.svg"
-                alt="Facebook"
-              />
-            </div>
-            <div class="col footerSection text-end">
-              <h5 class="footerH5">Mi Casa Construcciones</h5>
-              <p class="footerP">info@micasaconstrucciones.uy</p>
-              <p class="footerP">Cel. +598 93 562 014</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Botón de WhatsApp -->
-      <a
-        href="https://wa.me/+59893562014"
-        class="whatsapp-button"
-        target="_blank"
-      >
-        <img src="./../assets/images/whatsapp (1).svg" alt="WhatsApp" />
-      </a>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

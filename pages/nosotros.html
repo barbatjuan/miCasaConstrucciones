@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Casa Construcciones</title>
+    <title>Contacto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,26 +21,29 @@
       href="./../assets/images/icono-mi-casa.jpg"
       type="image/x-icon"
     />
-
     <link rel="stylesheet" href="./../assets/styles/styles.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("rjZs4P7i10E3hu_WV"); // Tu User ID Público
+      })();
+    </script>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img
-                src="/assets/images/icono-mi-casa.jpg"
-                alt="Logo"
-                width="30"
-                height="24"
-                class="d-inline-block align-text-top logo"
-              />
-            </a>
-          </div>
+          <a class="navbar-brand" href="#">
+            <img
+              src="./../assets/images/icono-mi-casa.jpg"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top logo"
+            />
+          </a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler ms-auto"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -51,30 +54,144 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./../index.html"
-                  >Inicio</a
+                <a class="nav-link" href="./../index.html">Inicio</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./../pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./../pages/contacto.html"
+                  >Contacto</a
                 >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./../pages/trabajos.html">Trabajos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="./../pages/nosotros.html"
-                  >Nosotros</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./../pages/contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="mainNosotros">
+      <div class="container containerNosotros">
+        <div class="row rowNosotros">
+          <div class="col-lg col-12 colNosotrosBG"></div>
+          <div class="col-lg col-12 colNosotros">
+            <h4>Sobre Nosotros</h4>
+            <p>
+              En Mi Casa Construcciones, nos dedicamos a convertir tus sueños en
+              realidad. Con más de 20 años de experiencia en el sector de la
+              construcción, nos especializamos en la creación de hogares
+              personalizados y proyectos residenciales de alta calidad. Nuestro
+              compromiso es ofrecer un servicio integral, desde la planificación
+              y diseño hasta la ejecución y entrega final, asegurando la máxima
+              satisfacción de nuestros clientes. Nos enorgullece nuestro enfoque
+              en la excelencia, la innovación y la sostenibilidad, utilizando
+              materiales de primera calidad y técnicas avanzadas para construir
+              espacios que no solo sean funcionales y estéticamente agradables,
+              sino también duraderos y respetuosos con el medio ambiente. En Mi
+              Casa Construcciones, construimos más que casas, construimos
+              hogares para toda la vida.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="separadorNosotros"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col colNosotros">
+            <h4 class="text-center">Ya tienes tu terreno?</h4>
+            <p>
+              En Mi Casa Construcciones, transformamos tu terreno en el hogar de
+              tus sueños. Si ya tienes un terreno propio, nuestro equipo de
+              expertos te ayudará a diseñar y construir una casa que se adapte a
+              tus necesidades y estilo de vida. Con materiales de alta calidad y
+              un compromiso inquebrantable con la excelencia, hacemos realidad
+              tus proyectos residenciales, garantizando durabilidad y
+              satisfacción.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col colNosotros">
+            <h4 class="text-center">Llave en mano</h4>
+            <p>
+              En Mi Casa Construcciones, ofrecemos proyectos llave en mano para
+              brindarle una experiencia sin estrés desde el inicio hasta la
+              entrega final. Trabajamos de la mano con arquitectos de renombre
+              para encargarnos de todo el proceso, desde el diseño y la
+              planificación hasta la construcción y los acabados. Así,
+              garantizamos que su proyecto se complete a tiempo y dentro del
+              presupuesto. Confíe en nosotros para hacer realidad su visión con
+              soluciones integrales y personalizadas.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col colNosotros">
+            <h4 class="text-center">Reformas</h4>
+            <p>
+              En Mi Casa Construcciones, nos especializamos en reformas para
+              transformar su hogar en el espacio de sus sueños. Ya sea una
+              renovación completa o mejoras específicas, nuestro equipo
+              profesional garantiza resultados de alta calidad y atención a cada
+              detalle. ¡Convierta su casa en el hogar perfecto con nuestras
+              soluciones personalizadas de reforma!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col colNosotros">
+          <h4 class="text-center">Presupuestos sin Costo</h4>
+          <p>
+            En Mi Casa Construcciones, ofrecemos presupuestos sin costo para
+            todos nuestros servicios. Queremos que tenga una visión clara de su
+            proyecto desde el inicio, sin compromisos ni sorpresas. Nuestro
+            equipo de expertos está listo para evaluar sus necesidades y
+            proporcionarle un presupuesto detallado y preciso, completamente
+            gratuito. ¡Contáctenos hoy mismo y dé el primer paso hacia la
+            construcción de sus sueños!
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center mb-3">
+              <img
+                class="iconoFooter"
+                src="./../assets/images/instagram.svg"
+                alt="Instagram"
+              />
+              <img
+                class="iconoFooter"
+                src="./../assets/images/facebook.svg"
+                alt="Facebook"
+              />
+            </div>
+            <div class="col-12 text-center">
+              <h5 class="footerH5">Mi Casa Construcciones</h5>
+              <p class="footerP">info@micasaconstrucciones.uy</p>
+              <p class="footerP">Cel. +598 93 562 014</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Botón de WhatsApp -->
+      <a
+        href="https://wa.me/+59893562014"
+        class="whatsapp-button"
+        target="_blank"
+      >
+        <img src="./../assets/images/whatsapp.svg" alt="WhatsApp" />
+      </a>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
