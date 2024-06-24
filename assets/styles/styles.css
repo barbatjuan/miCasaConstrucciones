@@ -196,13 +196,13 @@ body {
 
 /* FORM */
 .input-group {
-    width: calc(100% - 100px); /* Ajuste del ancho del contenedor del ícono */
+    width: 100%; /* Ajuste del ancho del contenedor del ícono */
     margin-bottom: 15px; /* Espacio inferior para separar los elementos */
   }
 
   .input-group-text {
-    width: 40px; /* Ancho deseado para el ícono */
-    height: 40px; /* Altura deseada para el ícono */
+    width: 38px; /* Ancho deseado para el ícono */
+    height: 38px; /* Altura deseada para el ícono */
   }
 
 .formContact {
