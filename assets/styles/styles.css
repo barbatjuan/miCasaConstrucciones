@@ -315,6 +315,15 @@ body {
     letter-spacing: 2px;
 }
 
+.webFooter {
+    color: #d18675;
+    letter-spacing: 3px;
+}
+
+.text-center a {
+    text-decoration: none;
+}
+
 .footerSection {
     width: 100%;
     height: auto; /* Ajuste automático de la altura */
