@@ -29,7 +29,7 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
       (function () {
-        emailjs.init("rjZs4P7i10E3hu_WV"); // Tu User ID Público
+        emailjs.init("rjZs4P7i10E3hu_WV"); // Reemplaza con tu User ID
       })();
     </script>
     <style>
@@ -72,9 +72,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="./../index.html">Inicio</a>
               </li>
-              <!-- <li class="nav-item">
-              <a class="nav-link" href="./../pages/trabajos.html">Trabajos</a>
-            </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="./../pages/nosotros.html">Nosotros</a>
               </li>
@@ -92,7 +89,7 @@
       </nav>
     </header>
     <main class="mainContacto">
-      <form id="contact-form">
+      <form id="contact-form" action="enviar-correo.php" method="POST">
         <div class="container">
           <div class="row formContact">
             <div class="col-12">
@@ -130,6 +127,8 @@
                     required
                   />
                 </div>
+              </div>
+              <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label"
                   >Email</label
                 >
@@ -197,44 +196,38 @@
               <h5 class="footerH5">Mi Casa Construcciones</h5>
               <p class="footerP">info@micasaconstrucciones.uy</p>
               <p class="footerP">Cel. +598 93 562 014</p>
-              <a href="https://www.webcoders.io" target="_blank">
-                <p class="footerP webFooter">
-                  Sitio web creado por Web Coders | www.webcoders.io
-                </p>
-              </a>
+              <a href="https://www.webcoders.io">
+                <img
+                  class="logoWebCoders"
+                  src="./../assets/images/logo-web-coders.png"
+                  alt="Web Coders"
+              /></a>
             </div>
           </div>
         </div>
       </div>
-      <!-- Botón de WhatsApp -->
-      <a
-        href="https://wa.me/+59893562014"
-        class="whatsapp-button"
-        target="_blank"
-      >
-        <img src="./../assets/images/whatsapp.svg" alt="WhatsApp" />
-      </a>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
     <script>
       document
         .getElementById("contact-form")
         .addEventListener("submit", function (event) {
           event.preventDefault();
-
           emailjs.sendForm("service_tqybbzf", "template_0sas4sc", this).then(
-            function () {
-              alert("Mensaje enviado correctamente!");
+            function (response) {
+              console.log("SUCCESS!", response.status, response.text);
+              alert("Correo enviado correctamente.");
             },
             function (error) {
-              alert("Error al enviar el mensaje: " + JSON.stringify(error));
+              console.log("FAILED...", error);
+              alert("Hubo un error al enviar el correo.");
             }
           );
         });
     </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-L5Q6KBU5Awbgsr5xKzWz/ZgFM5QtZld/GnN8qddDGCA9vzxIJ6CB6Vzh7Q0TE/DJ"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
